@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<!--
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="theme-color" content="#000000" />
+		<!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<!--
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+		<!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,15 +22,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-	<title>React App</title>
-</head>
+		<title>Emoji Interpreter</title>
+	</head>
 
-<body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
+	<body>
+		<nav class="navigation">
+			<div class="nav-brand">Know Your Emojis! ✨</div>
+			<ul class="list-non-bullet nav-pills">
+				<li class="list-item-inline">
+					<a class="link link-active" href="/">Home</a>
+				</li>
+				<li class="list-item-inline">
+					<a
+						class="link"
+						href="https://github.com/ChhikaraBRUH/neoG-markEight-emoji-interpreter"
+						>Source Code</a
+					>
+				</li>
+				<li class="list-item-inline">
+					<a class="link" href="https://bruh.dev">My Portolio</a>
+				</li>
+			</ul>
+		</nav>
+		<noscript>
+			You need to enable JavaScript to run this app.
+		</noscript>
+		<div id="root"></div>
+		<!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -38,6 +58,41 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
 
+		<footer class="footer">
+			<div class="footer-header">Connect With Me On My Socials</div>
+			<div class="with-love">
+				Made with ❤️ by 
+				<a
+					style="
+						text-decoration: none;
+						font-weight: bold;
+						color: #ffffff;
+					"
+					href="https://bruh.dev"
+				>
+					Chaitanya</a
+				>
+			</div>
+			<ul class="social-links list-non-bullet">
+				<li class="list-item-inline">
+					<a class="link" href="https://github.com/ChhikaraBRUH"
+						>GitHub</a
+					>
+				</li>
+				<li class="list-item-inline">
+					<a class="link" href="https://twitter.com/ChhikaraBRUH"
+						>Twitter</a
+					>
+				</li>
+				<li class="list-item-inline">
+					<a
+						class="link"
+						href="https://www.linkedin.com/in/chaitanyachhikara"
+						>LinkedIn</a
+					>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>
