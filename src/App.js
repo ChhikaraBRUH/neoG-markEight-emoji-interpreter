@@ -22,7 +22,7 @@ const emojiDict = {
 var emojiList = Object.keys(emojiDict);
 
 export default function App() {
-	[meaning, setMeaning] = useState(
+	const [meaning, setMeaning] = useState(
 		"Please type in the emoji or select from below 👇."
 	);
 
@@ -56,32 +56,26 @@ export default function App() {
 		/> <
 		div className = "output" > {
 			meaning
-		} < /div> <
-		div className = "emojiDisplay" > {
-			emojiList.map((emoji) => {
-				return ( <
-					span onClick = {
-						() => emojiClickHandler(emoji)
-					}
-					key = {
-						emoji
-					}
-					style = {
-						{
-							fontSize: "2rem",
-							padding: "0.2rem",
-							margin: "0.5rem",
-							cursor: "pointer"
-						}
-					} >
-					{
-						emoji
-					} <
-					/span>
-				);
-			})
-		} <
-		/div> <
-		/div>
-	);
+		} < /div> <div className = "emojiDisplay" > {emojiList.map((emoji) => {
+		return ( < span onClick = {
+				() => emojiClickHandler(emoji)
+			}
+			key = {
+				emoji
+			}
+			style = {
+				{
+					fontSize: "2rem",
+					padding: "0.2rem",
+					margin: "0.5rem",
+					cursor: "pointer"
+				}
+			} > {
+				emoji
+			} <
+			/span>
+		);
+	})
+} < /div> </div >
+);
 }
