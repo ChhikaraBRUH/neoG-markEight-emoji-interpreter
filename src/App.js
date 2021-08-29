@@ -45,8 +45,7 @@ export default function App() {
 		setMeaning(emojiDict[emoji]);
 	}
 
-	return ( <
-		div className = "App" >
+	return ( < div className = "App" >
 		<
 		input className = "emojiInput"
 		placeholder = "Type in here..."
@@ -56,26 +55,27 @@ export default function App() {
 		/> <
 		div className = "output" > {
 			meaning
-		} < /div> <div className = "emojiDisplay" > {emojiList.map((emoji) => {
-		return ( < span onClick = {
-				() => emojiClickHandler(emoji)
-			}
-			key = {
-				emoji
-			}
-			style = {
-				{
-					fontSize: "2rem",
-					padding: "0.2rem",
-					margin: "0.5rem",
-					cursor: "pointer"
-				}
-			} > {
-				emoji
-			} <
-			/span>
-		);
-	})
-} < /div> </div >
-);
+		} < /div> <
+		div className = "emojiDisplay" > {
+			emojiList.map((emoji) => {
+				return ( < span onClick = {
+						() => emojiClickHandler(emoji)
+					}
+					key = {
+						emoji
+					}
+					style = {
+						{
+							fontSize: "2rem",
+							padding: "0.2rem",
+							margin: "0.5rem",
+							cursor: "pointer"
+						}
+					} > {
+						emoji
+					} <
+					/span>
+				);
+			})
+		} < /div> </div > );
 }
