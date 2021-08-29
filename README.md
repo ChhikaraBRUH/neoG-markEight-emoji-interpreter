@@ -1,2 +1,3 @@
 # neoG-markEight-emoji-interpreter
-Created with CodeSandbox
+
+Emoji Interpreter app tell you the meaning of the selected emoji. It is built using React.
